@@ -65,7 +65,7 @@ const Navbar = () => {
                   : "text-foreground border-foreground/25 hover:bg-foreground hover:text-background"
             }`}
           >
-            Book a Call
+            Hire Me
             <ArrowUpRight size={14} />
           </a>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
                 className="inline-flex items-center gap-2 text-lg uppercase tracking-[0.12em] border border-foreground/30 rounded-full px-6 py-2.5 hover:bg-foreground hover:text-background transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Book a Call
+                Hire Me
                 <ArrowUpRight size={16} />
               </motion.a>
             </div>

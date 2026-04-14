@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +8,49 @@ import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/lib/data";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(null);
+
+    emailjs
+      .send(
+        "service_mo88jdb",
+        "template_jemri4l",
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "sz4YUbEzRDcgIzbfX"
+      )
+      .then(
+        () => {
+          setSuccess(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          setLoading(false);
+        },
+        () => {
+          setSuccess(false);
+          setLoading(false);
+        }
+      );
+  };
+
   return (
     <motion.section
       id="contact"
@@ -18,7 +63,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Full-width dramatic heading */}
         <motion.div variants={fadeInUp} className="text-center mb-16">
-          <h2 className="font-serif font-bold italic text-5xl md:text-6xl lg:text-7xl uppercase text-foreground leading-tight">
+          <h2 className="font-serif font-bold italic text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-foreground leading-tight">
             LET&apos;S WORK TOGETHER
           </h2>
           <div className="border-b border-foreground/20 w-24 mx-auto my-8" />
@@ -74,29 +119,58 @@ const Contact = () => {
           <motion.form
             variants={fadeInUp}
             className="flex flex-col gap-5"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <Input
               type="text"
+              name="name"
               placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
               className="bg-card border-border text-foreground placeholder:text-muted/60 rounded-md h-12"
             />
             <Input
               type="email"
+              name="email"
               placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="bg-card border-border text-foreground placeholder:text-muted/60 rounded-md h-12"
+            />
+            <Input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
               className="bg-card border-border text-foreground placeholder:text-muted/60 rounded-md h-12"
             />
             <Textarea
+              name="message"
               placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
               rows={5}
               className="bg-card border-border text-foreground placeholder:text-muted/60 rounded-md resize-none"
             />
             <Button
               type="submit"
-              className="bg-foreground text-background hover:bg-foreground/80 rounded-md uppercase tracking-wider text-sm transition-all duration-300 px-8 py-6 self-start"
+              disabled={loading}
+              className="bg-foreground text-background hover:bg-foreground/80 rounded-md uppercase tracking-wider text-sm transition-all duration-300 px-8 py-6 self-start disabled:opacity-50"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </Button>
+
+            {success === true && (
+              <p className="text-green-500 text-sm">Message sent successfully!</p>
+            )}
+            {success === false && (
+              <p className="text-red-500 text-sm">Failed to send. Please try again.</p>
+            )}
           </motion.form>
         </div>
       </div>

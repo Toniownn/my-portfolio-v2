@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Carl Anthony Dayoc",
   title: "Developer",
-  email: "hello@ameerkhan.dev",
+  email: "anthonycarl56@gmail.com",
   description:
     "I am an entry-level IT graduate with hands-on experience in web and mobile development. I have worked with technologies such as React, Next.js, Flutter, Spring Boot, and SQL to build and support monitoring systems, data loggers, and management applications. Through my internship and junior programmer role, I've contributed to UI development, backend integration, system testing, and documentation. I am a fast learner with strong problem-solving skills and a passion for continuously improving my technical abilities through real-world projects and collaboration.",
   heroIntro:
@@ -14,9 +14,9 @@ export const siteConfig = {
     { label: "Contact", href: "#contact" },
   ],
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Toniownn",
+    linkedin: "https://www.linkedin.com/in/carl-anthony-dayoc-361b35168",
+    twitter: "https://x.com/Toniownn",
   },
 };
 
@@ -77,7 +77,7 @@ export const experiences = [
   {
     year: "Aug. 2024 — Aug. 2025",
     role: "Junior Programmer",
-    company: "BBLC",
+    company: "BigBlue Logistic Corp.",
     tags: ["Next.js", "MongoDB", "Flutter", "Spring Boot"],
     bullets: [
       "Contributed to a <strong>Next.js + MongoDB</strong> web-based data logger for real-time temperature monitoring.",
@@ -89,7 +89,7 @@ export const experiences = [
   {
     year: "Feb 2024 — May 2024",
     role: "Web Developer",
-    company: "CTU",
+    company: "Cebu Technological University - Danao Campus",
     tags: ["Front-end", "Back-end", "Testing"],
     bullets: [
       "Assisted in developing a secure login and monitoring system for tracking library user entry and exit.",
@@ -120,7 +120,7 @@ export const heroLabels = {
     "WITH REACT, NEXT.JS & NODE",
     "MEANINGFUL IMPACT",
   ],
-  stackLabel: "CLIENTS:",
+  stackLabel: "TECH STACK:",
   stackItems: ["REACT", "NEXT.JS", "NODE"],
   cta: { text: "VIEW RECENT WORK", href: "#projects" },
   subtitle: "( DEVELOPER )",

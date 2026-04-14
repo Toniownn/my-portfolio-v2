@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 import { heroLabels } from "@/lib/data";
 import heroImage from "@/assets/images/me.png";
 
@@ -34,7 +34,7 @@ const Hero = () => {
         {/* ── Hero Image ── */}
         <motion.div
           variants={fadeUp}
-          className="absolute z-10 left-1/2 -translate-x-1/2 w-[55%] sm:w-[38%] md:w-[28%] lg:w-[20%] top-[22%] sm:top-[26%] md:top-[32%] lg:top-[38%] bottom-[10%] sm:bottom-[8%] md:bottom-0"
+          className="absolute z-10 left-1/2 -translate-x-1/2 w-[50%] sm:w-[38%] md:w-[28%] lg:w-[20%] top-[18%] sm:top-[26%] md:top-[32%] lg:top-[38%] bottom-[14%] sm:bottom-[8%] md:bottom-0"
           style={{
             maxWidth: 320,
             maskImage: `
@@ -60,12 +60,12 @@ const Hero = () => {
         <motion.div
           variants={fade}
           className="absolute inset-x-0 z-20 pointer-events-none flex flex-col items-center text-center px-4"
-          style={{ top: "clamp(8%, 10vw, 12%)" }}
+          style={{ top: "clamp(6%, 10vw, 12%)" }}
         >
           <h1
             className="font-condensed font-extralight uppercase hero-heading"
             style={{
-              fontSize: "clamp(2.8rem, 8vw, 8rem)",
+              fontSize: "clamp(2.4rem, 8vw, 8rem)",
               lineHeight: 0.95,
               letterSpacing: "-0.01em",
             }}
@@ -77,7 +77,7 @@ const Hero = () => {
           <span
             className="font-condensed font-extralight uppercase hero-heading mt-2"
             style={{
-              fontSize: "clamp(1.4rem, 3.5vw, 3.2rem)",
+              fontSize: "clamp(1.1rem, 3.5vw, 3.2rem)",
               lineHeight: 1,
               letterSpacing: "0.04em",
             }}
@@ -91,7 +91,7 @@ const Hero = () => {
           {/* Top-left: (FULL-STACK) */}
           <motion.span
             variants={fade}
-            className="absolute top-[10%] left-6 md:left-10 font-editorial text-[11px] md:text-[13px] tracking-[0.15em] uppercase hero-label hidden sm:inline"
+            className="absolute top-[10%] left-6 md:left-10 font-editorial text-[11px] md:text-[13px] tracking-[0.15em] uppercase hero-label hidden lg:inline"
           >
             {heroLabels.topLeft}
           </motion.span>
@@ -99,7 +99,7 @@ const Hero = () => {
           {/* Top-right: (AVAILABLE FOR HIRE) */}
           <motion.span
             variants={fade}
-            className="absolute top-[10%] right-6 md:right-10 font-editorial text-[13px] tracking-[0.15em] uppercase hero-label hidden sm:inline"
+            className="absolute top-[10%] right-6 md:right-10 font-editorial text-[13px] tracking-[0.15em] uppercase hero-label hidden lg:inline"
           >
             {heroLabels.topRight}
           </motion.span>
@@ -156,22 +156,46 @@ const Hero = () => {
                 <ArrowDownRight size={14} />
               </span>
             </a>
+            <a
+              href="/CarlAnthonyDayoc_Resume.pdf"
+              download
+              className="hero-cta flex items-center gap-3 rounded-full pl-5 pr-1.5 py-1.5 group transition-all duration-300"
+            >
+              <span className="font-editorial text-[12px] tracking-[0.15em] uppercase hero-label-strong group-hover:opacity-100 transition-colors">
+                Download CV
+              </span>
+              <span className="hero-cta-icon w-8 h-8 rounded-full flex items-center justify-center transition-all">
+                <Download size={14} />
+              </span>
+            </a>
           </motion.div>
 
           {/* Mobile CTA — centered bottom, above image */}
           <motion.div
             variants={fade}
-            className="absolute bottom-[3%] left-0 right-0 z-40 flex justify-center md:hidden"
+            className="absolute bottom-[3%] left-4 right-4 z-40 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 md:hidden"
           >
             <a
               href={heroLabels.cta.href}
-              className="hero-cta flex items-center gap-3 rounded-full pl-5 pr-1.5 py-1.5 group transition-all duration-300"
+              className="hero-cta flex items-center gap-3 rounded-full pl-5 pr-1.5 py-1.5 group transition-all duration-300 whitespace-nowrap"
             >
-              <span className="font-editorial text-[12px] tracking-[0.15em] uppercase hero-label-strong group-hover:opacity-100 transition-colors">
+              <span className="font-editorial text-[11px] sm:text-[12px] tracking-[0.12em] sm:tracking-[0.15em] uppercase hero-label-strong group-hover:opacity-100 transition-colors">
                 {heroLabels.cta.text}
               </span>
-              <span className="hero-cta-icon w-8 h-8 rounded-full flex items-center justify-center transition-all">
-                <ArrowDownRight size={14} />
+              <span className="hero-cta-icon w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all shrink-0">
+                <ArrowDownRight size={13} />
+              </span>
+            </a>
+            <a
+              href="/CarlAnthonyDayoc_Resume.pdf"
+              download
+              className="hero-cta flex items-center gap-3 rounded-full pl-5 pr-1.5 py-1.5 group transition-all duration-300 whitespace-nowrap"
+            >
+              <span className="font-editorial text-[11px] sm:text-[12px] tracking-[0.12em] sm:tracking-[0.15em] uppercase hero-label-strong group-hover:opacity-100 transition-colors">
+                Download CV
+              </span>
+              <span className="hero-cta-icon w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all shrink-0">
+                <Download size={13} />
               </span>
             </a>
           </motion.div>
