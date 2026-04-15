@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/lib/ThemeContext";
 import { siteConfig } from "@/lib/data";
+import Logo from "@/components/ui/Logo";
 
 const navLinks = siteConfig.navLinks;
 
@@ -34,9 +35,9 @@ const Navbar = () => {
         {/* Logo */}
         <a
           href="#"
-          className={`font-serif font-bold text-lg tracking-wide transition-colors duration-300 ${textColor}`}
+          className={`transition-colors duration-300 ${textColor}`}
         >
-          CARL
+          <Logo size={28} />
         </a>
 
         {/* Center nav links */}
@@ -65,7 +66,7 @@ const Navbar = () => {
                   : "text-foreground border-foreground/25 hover:bg-foreground hover:text-background"
             }`}
           >
-            Hire Me
+            Contact Me
             <ArrowUpRight size={14} />
           </a>
 
@@ -128,7 +129,7 @@ const Navbar = () => {
                 className="inline-flex items-center gap-2 text-lg uppercase tracking-[0.12em] border border-foreground/30 rounded-full px-6 py-2.5 hover:bg-foreground hover:text-background transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Hire Me
+                Contact Me
                 <ArrowUpRight size={16} />
               </motion.a>
             </div>

@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import { siteConfig } from "@/lib/data";
+import Logo from "@/components/ui/Logo";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,9 +13,7 @@ const Footer = () => {
         {/* Top row: Logo name (left) | Social icons (right) */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 mb-10">
           {/* Logo / Name */}
-          <span className="font-serif font-bold text-lg tracking-wide">
-            {siteConfig.name.toUpperCase()}
-          </span>
+          <Logo size={28} />
 
           {/* Social icons */}
           <div className="flex items-center gap-5">

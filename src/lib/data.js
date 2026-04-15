@@ -1,3 +1,22 @@
+// Project images
+import ttt1 from "@/assets/ticTacToe/ttt1.webp";
+import ttt2 from "@/assets/ticTacToe/ttt2.webp";
+import ttt3 from "@/assets/ticTacToe/ttt3.webp";
+import ttt4 from "@/assets/ticTacToe/ttt4.webp";
+import ttt5 from "@/assets/ticTacToe/ttt5.webp";
+import ppsk1 from "@/assets/pingpong/ppsk1.webp";
+import ppsk2 from "@/assets/pingpong/ppsk2.webp";
+import ppsk3 from "@/assets/pingpong/ppsk3.webp";
+import ppsk4 from "@/assets/pingpong/ppsk4.webp";
+import ppsk5 from "@/assets/pingpong/ppsk5.webp";
+import note1 from "@/assets/note/note1.webp";
+import note2 from "@/assets/note/note2.webp";
+import note3 from "@/assets/note/note3.webp";
+import note4 from "@/assets/note/note4.webp";
+import note5 from "@/assets/note/note5.webp";
+import note6 from "@/assets/note/note6.webp";
+import note7 from "@/assets/note/note7.webp";
+
 export const siteConfig = {
   name: "Carl Anthony Dayoc",
   title: "Developer",
@@ -25,6 +44,7 @@ export const projects = [
     name: "Tic-Tac-Toe",
     description:
       "An interactive web-based application that recreates the classic two-player game on a 3x3 grid. The game manages player turns, validates each move, and continuously checks all possible winning combinations. It automatically determines when a player wins or when the match ends in a draw, providing clear visual feedback to the users.",
+    images: [ttt1, ttt2, ttt3, ttt4, ttt5],
     tags: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Toniownn/React-Tic-Tac-Toe",
     live: "https://react-tic-tac-toe-nine-murex.vercel.app/",
@@ -33,6 +53,7 @@ export const projects = [
     name: "Ping Pong Score Keeper",
     description:
       "An interactive scoreboard application designed for tracking ping-pong matches. Users can define a winning score, and the system automatically updates player scores in real time. Once a player reaches the selected winning number, the app clearly highlights the winner.",
+    images: [ppsk1, ppsk2, ppsk3, ppsk4, ppsk5],
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Toniownn/PingPongScoreKeeper",
     live: "https://ping-pong-score-keeper-one.vercel.app/",
@@ -41,8 +62,18 @@ export const projects = [
     name: "Note App",
     description:
       "A sticky notes application that allows users to create an account and log in to manage their notes securely. Users can create multiple folders to organize their notes by category, and easily add, edit, or delete notes within each folder. The app provides a simple and intuitive interface.",
+    images: [note1, note2, note3, note4, note5, note6, note7],
     tags: ["React", "TypeScript", "Firebase", "Tailwind", "Shadcn"],
     github: "https://github.com/Toniownn/Note-App-Public",
+  },
+  {
+    name: "Weather Dashboard",
+    description:
+      "A real-time weather dashboard that displays current conditions, hourly forecasts, and 7-day outlooks for any city. Features include location-based auto-detection, interactive charts, and saved favorite locations.",
+    images: [],
+    tags: ["React", "API Integration", "Tailwind", "Chart.js"],
+    github: "https://github.com/Toniownn",
+    live: "https://example.com",
   },
 ];
 
