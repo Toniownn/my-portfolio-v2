@@ -16,6 +16,17 @@ import note4 from "@/assets/note/note4.webp";
 import note5 from "@/assets/note/note5.webp";
 import note6 from "@/assets/note/note6.webp";
 import note7 from "@/assets/note/note7.webp";
+import kapow1 from "@/assets/kapow/ka-pow-desktop-clean.png";
+import kapow2 from "@/assets/kapow/ka-pow-desktop-check.png";
+import kapow3 from "@/assets/kapow/ka-pow-bestof-menu.png";
+import kapow4 from "@/assets/kapow/ka-pow-match-win.png";
+import kapow5 from "@/assets/kapow/ka-pow-win.png";
+import kapow6 from "@/assets/kapow/ka-pow-win-inline.png";
+import kapow7 from "@/assets/kapow/ka-pow-lose.png";
+import jaroche1 from "@/assets/jaroche/jaroche-landing.png";
+import jaroche2 from "@/assets/jaroche/jaroche-shop.png";
+import jaroche3 from "@/assets/jaroche/jaroche-about.png";
+import jaroche4 from "@/assets/jaroche/jaroche-cart.png";
 
 export const siteConfig = {
   name: "Carl Anthony Dayoc",
@@ -67,13 +78,20 @@ export const projects = [
     github: "https://github.com/Toniownn/Note-App-Public",
   },
   {
-    name: "Weather Dashboard",
+    name: "Ka-Pow",
     description:
-      "A real-time weather dashboard that displays current conditions, hourly forecasts, and 7-day outlooks for any city. Features include location-based auto-detection, interactive charts, and saved favorite locations.",
-    images: [],
-    tags: ["React", "API Integration", "Tailwind", "Chart.js"],
+      "A polished Rock-Paper-Scissors web game with a custom design system, best-of-N match flow, and animated round results. Built with React, TypeScript, and Tailwind, featuring a clean desktop UI, win/lose feedback states, and a configurable match menu.",
+    images: [kapow1, kapow2, kapow3, kapow4, kapow5, kapow6, kapow7],
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
     github: "https://github.com/Toniownn",
-    live: "https://example.com",
+  },
+  {
+    name: "Jaroché",
+    description:
+      "A full-stack ecommerce platform for an heirloom crochet atelier — editorial product browsing, cart, Stripe checkout, and an admin dashboard. Built with Next.js 15 (App Router), an Express + Prisma + PostgreSQL API, JWT auth, and Zod schemas shared across the monorepo.",
+    images: [jaroche1, jaroche2, jaroche3, jaroche4],
+    tags: ["Next.js", "React", "Express", "Prisma", "PostgreSQL", "Stripe", "Tailwind"],
+    github: "https://github.com/Toniownn",
   },
 ];
 
@@ -190,7 +208,7 @@ export const services = [
 
 export const stats = [
   { number: "1+", label: "YEARS EXPERIENCE" },
-  { number: "5+", label: "PROJECTS DELIVERED" },
+  { number: "6+", label: "PROJECTS DELIVERED" },
   { number: "15+", label: "TECHNOLOGIES" },
 ];
 
