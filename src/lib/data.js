@@ -52,6 +52,14 @@ export const siteConfig = {
 
 export const projects = [
   {
+    name: "Jaroché",
+    description:
+      "A full-stack ecommerce platform for an heirloom crochet atelier — editorial product browsing, cart, Stripe checkout, and an admin dashboard. Built with Next.js 15 (App Router), an Express + Prisma + PostgreSQL API, JWT auth, and Zod schemas shared across the monorepo.",
+    images: [jaroche1, jaroche2, jaroche3, jaroche4],
+    tags: ["Next.js", "React", "Express", "Prisma", "PostgreSQL", "Stripe", "Tailwind"],
+    github: "https://github.com/Toniownn",
+  },
+  {
     name: "Tic-Tac-Toe",
     description:
       "An interactive web-based application that recreates the classic two-player game on a 3x3 grid. The game manages player turns, validates each move, and continuously checks all possible winning combinations. It automatically determines when a player wins or when the match ends in a draw, providing clear visual feedback to the users.",
@@ -59,6 +67,14 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/Toniownn/React-Tic-Tac-Toe",
     live: "https://react-tic-tac-toe-nine-murex.vercel.app/",
+  },
+  {
+    name: "Ka-Pow",
+    description:
+      "A polished Rock-Paper-Scissors web game with a custom design system, best-of-N match flow, and animated round results. Built with React, TypeScript, and Tailwind, featuring a clean desktop UI, win/lose feedback states, and a configurable match menu.",
+    images: [kapow1, kapow2, kapow3, kapow4, kapow5, kapow6, kapow7],
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
+    github: "https://github.com/Toniownn",
   },
   {
     name: "Ping Pong Score Keeper",
@@ -76,22 +92,6 @@ export const projects = [
     images: [note1, note2, note3, note4, note5, note6, note7],
     tags: ["React", "TypeScript", "Firebase", "Tailwind", "Shadcn"],
     github: "https://github.com/Toniownn/Note-App-Public",
-  },
-  {
-    name: "Ka-Pow",
-    description:
-      "A polished Rock-Paper-Scissors web game with a custom design system, best-of-N match flow, and animated round results. Built with React, TypeScript, and Tailwind, featuring a clean desktop UI, win/lose feedback states, and a configurable match menu.",
-    images: [kapow1, kapow2, kapow3, kapow4, kapow5, kapow6, kapow7],
-    tags: ["React", "TypeScript", "Tailwind", "Vite"],
-    github: "https://github.com/Toniownn",
-  },
-  {
-    name: "Jaroché",
-    description:
-      "A full-stack ecommerce platform for an heirloom crochet atelier — editorial product browsing, cart, Stripe checkout, and an admin dashboard. Built with Next.js 15 (App Router), an Express + Prisma + PostgreSQL API, JWT auth, and Zod schemas shared across the monorepo.",
-    images: [jaroche1, jaroche2, jaroche3, jaroche4],
-    tags: ["Next.js", "React", "Express", "Prisma", "PostgreSQL", "Stripe", "Tailwind"],
-    github: "https://github.com/Toniownn",
   },
 ];
 
