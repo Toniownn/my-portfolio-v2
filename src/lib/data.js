@@ -124,6 +124,17 @@ export const skills = [
 
 export const experiences = [
   {
+    year: "Feb. 2026 — May 2026",
+    role: "Full Stack Developer / AI Automation Specialist",
+    company: "Telpro (Project-based)",
+    tags: ["Automation", "n8n", "WordPress", "Claude Code"],
+    bullets: [
+      "Designed and built an <strong>automated dialer system</strong> to streamline outbound client calls, reducing manual effort and improving contact rates.",
+      "Implemented a <strong>Telegram quiz bot using n8n</strong> to automatically deliver questionnaires to all members in a group chat, improving team engagement and knowledge sharing.",
+      "Built a custom <strong>Language Switcher Plugin</strong> for the Cebu Grand Realty WordPress site using <strong>Claude Code</strong>, enabling site visitors and potential buyers to browse property listings and dynamic",
+    ],
+  },
+  {
     year: "Aug. 2024 — Aug. 2025",
     role: "Junior Programmer",
     company: "BigBlue Logistic Corp.",
