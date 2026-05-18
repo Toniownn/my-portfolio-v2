@@ -26,7 +26,7 @@ import kapow7 from "@/assets/kapow/ka-pow-lose.png";
 import jaroche1 from "@/assets/jaroche/jaroche-landing.png";
 import jaroche2 from "@/assets/jaroche/jaroche-shop.png";
 import jaroche3 from "@/assets/jaroche/jaroche-about.png";
-import jaroche4 from "@/assets/jaroche/jaroche-cart.png";
+import jaroche4 from "@/assets/jaroche/jaroche-journal.png";
 
 export const siteConfig = {
   name: "Carl Anthony Dayoc",
