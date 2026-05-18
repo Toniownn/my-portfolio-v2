@@ -127,7 +127,7 @@ export const experiences = [
     year: "Feb. 2026 — May 2026",
     role: "Full Stack Developer / AI Automation Specialist",
     company: "Telpro (Project-based)",
-    tags: ["Automation", "n8n", "WordPress", "Claude Code"],
+    tags: ["React", "PostgreSQL", "SQL", "n8n", "WordPress", "Claude Code", "Automation"],
     bullets: [
       "Designed and built an <strong>automated dialer system</strong> to streamline outbound client calls, reducing manual effort and improving contact rates.",
       "Implemented a <strong>Telegram quiz bot using n8n</strong> to automatically deliver questionnaires to all members in a group chat, improving team engagement and knowledge sharing.",
