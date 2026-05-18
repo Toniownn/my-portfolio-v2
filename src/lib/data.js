@@ -58,6 +58,7 @@ export const projects = [
     images: [jaroche1, jaroche2, jaroche3, jaroche4],
     tags: ["Next.js", "React", "Express", "Prisma", "PostgreSQL", "Stripe", "Tailwind"],
     github: "https://github.com/Toniownn",
+    live: "https://jaroche.eltonyo.site",
   },
   {
     name: "Tic-Tac-Toe",
